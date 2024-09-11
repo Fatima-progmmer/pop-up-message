@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    /* Style the popup content */
+    .popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style the close button */
+    #close-btn {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #close-btn:hover {
+        background-color: #3e8e41;
+    }
+</style>
+
+<body>
+    <!-- The popup container -->
+    <div id="popup" class="popup">
+        <!-- The popup content -->
+        <div class="popup-content">
+            <h2>Popup Message</h2>
+            <p>This is a popup message.</p>
+            <button id="close-btn">Close</button>
+        </div>
+    </div>
+</body>
+<script>
+    // Get the popup container and close button
+    const popup = document.getElementById('popup');
+    const closeBtn = document.getElementById('close-btn');
+
+    // Show the popup
+    function showPopup() {
+        popup.style.display = 'block';
+    }
+
+    // Hide the popup
+    function hidePopup() {
+        popup.style.display = 'none';
+    }
+
+    // Add event listener to the close button
+    closeBtn.addEventListener('click', hidePopup);
+
+    // Show the popup after 2 seconds
+    setTimeout(showPopup, 2000);
+</script>
+
+</html>
