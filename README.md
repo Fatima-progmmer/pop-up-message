@@ -25,7 +25,8 @@ A simple and customizable **Pop-Up Message** component built using **HTML, CSS, 
 3. Customize the pop-up text, duration, and style in the JavaScript file.  
 
 ## 📸 Preview  
-![Pop-Up Message UI](your-image-url-here) *(Replace with a screenshot of your project)*  
+![Pop-Up Message UI](<img width="311" alt="{EBB19A41-AAEB-426A-9DC5-2667502F8FC5}" src="https://github.com/user-attachments/assets/3451a63f-e577-4cef-afc4-4a7ac3ed6c6a" />
+) *(Replace with a screenshot of your project)*  
 
 ## 💡 Future Enhancements  
 🔹 Add sound effects for notifications 🔊  
